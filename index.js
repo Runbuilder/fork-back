@@ -9,6 +9,12 @@ const {
 const app = express();
 app.use(cors());
 app.use(express.json());
+app.options('/generate/', cors());
+
+app.use((req, res, next) => {
+  console.log('Received request:', req.method, req.path);
+  next();
+});
 
 const port = 3000;
 const MODEL_NAME = "gemini-pro";
