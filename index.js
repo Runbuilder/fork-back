@@ -43,7 +43,7 @@ app.post('/generate', async (req, res) => {
     const parts = [
       { text: req.body.userInput + `\n위 내용으로 웹앱 만드는 HTML 코드 작성해줘.  
       css, js 코드를 index.html 파일 하나에 모두 포함시켜줘.
-      sweetalert2, tailwind 라이브러리를 이용해서 깔끔한 디자인으로 작성해줘.
+      sweetalert2, tailwind css 라이브러리를 이용해서 컬러풀하고 깔끔한 디자인으로 작성해줘.
       메인 요소는 화면의 가로, 세로축의 가운데로 정렬해줘.
       배경에 대한 특별한 언급이 없으면 배경색은 파스텔 색으로 해줘.
       다른 설명은 보여주지 말고 실행할 코드만 보여줘. 
