@@ -18,7 +18,7 @@ app.use((req, res, next) => {
 
 const port = 3000;
 const MODEL_NAME = "gemini-1.0-pro-001";
-const API_KEY = ""; // 제미나이 API 키로 대체
+const API_KEY = "AIzaSyBDNjNOSKyGn55Ke-BTNNzF0WxrFUTttYM"; // 제미나이 API 키로 대체
 const prompt = '이 주제에 필요한 준비물 아이디어 작성해줘'; // 챗봇 역할 프롬프트 입력
 
 app.post('/generate', async (req, res) => {  
