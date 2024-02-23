@@ -12,7 +12,7 @@ app.use(express.json());
 app.options('/generate/', cors());
 
 app.use((req, res, next) => {
-  console.log('Received request:', req.method, req.path,req.body);
+  console.log('Received request:', req.method, req.path,req);
   next();
 });
 
