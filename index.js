@@ -9,8 +9,7 @@ const {
 
 const app = express();
 app.use(cors());
-app.use(express.json());
-// 모든 요청에 대해 클라이언트의 도메인 주소를 로깅
+app.use(express.json()); 
 app.use((req, res, next) => {
   console.log('Request received', req.method, req.path,req);
   next();
@@ -18,8 +17,8 @@ app.use((req, res, next) => {
 
 const port = 3000;
 const MODEL_NAME = "gemini-1.0-pro-001";
-const API_KEY = "AIzaSyBDNjNOSKyGn55Ke-BTNNzF0WxrFUTttYM"; // 제미나이 API 키로 대체
-const prompt = '이 주제에 필요한 준비물 아이디어 작성해줘'; // 챗봇 역할 프롬프트 입력
+const API_KEY = ""; // 제미나이 API 키로 대체
+const prompt = '이 주제에 필요한 준비물 아이디어 작성해줘'; // 당신의 챗봇에 맞게 프롬프트 변경해주세요
 
 app.post('/generate', async (req, res) => {  
     try {
